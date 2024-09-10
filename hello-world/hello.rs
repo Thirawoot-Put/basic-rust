@@ -22,6 +22,8 @@ fn main() {
     println!("{num:0<3}", num = 1);
     println!("{num:>width$}", num = 1, width = 5);
 
+    println!("My name is {0}, {1} {0}", "Bond", "James");
+
     // This will not compile because `Structure` not implement
     // #[allow(dead_code)] // disable `dead_code` which warn against unused module
     // struct Structure(i32);
